@@ -1,0 +1,36 @@
+# ~/.inputrc - Readline configuration
+# Enhanced command-line editing
+
+# Enable 8-bit input
+set input-meta on
+set output-meta on
+set convert-meta off
+
+# Completion behavior
+set completion-ignore-case on
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set mark-symlinked-directories on
+set match-hidden-files on
+
+# Editing mode
+set editing-mode emacs
+
+# History search with arrow keys
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\e[C": forward-char
+"\e[D": backward-char
+
+# Enable colored completion
+set colored-stats on
+set visible-stats on
+
+# Bell style
+set bell-style none
+
+# Append slash to directories
+set mark-directories on
+
+# Disable flow control (Ctrl+S/Ctrl+Q)
+set enable-bracketed-paste on
