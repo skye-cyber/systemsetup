@@ -1,0 +1,4 @@
+#! /bin/bash
+sudo cp ./psmousereset /usr/local/bin
+
+echo "ALL ALL=NOPASSWD: /usr/local/bin/psmousereset" | sudo EDITOR='tee -a' visudo -f /etc/sudoers.d/psmousereset
