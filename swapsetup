@@ -1,0 +1,10 @@
+#! /bin/bash
+# Create new
+sudo fallocate -l 6G /swapfile
+
+# Set proper permissions and format
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+
+# Enable the new swap
+sudo swapon /swapfile
