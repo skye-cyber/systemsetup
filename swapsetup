@@ -8,3 +8,8 @@ sudo mkswap /swapfile
 
 # Enable the new swap
 sudo swapon /swapfile
+
+# Optional: make permanent
+# echo '/swapfile                                 swap           swap    defaults   0 0' | sudo tee -a /etc/fstab
+# Or
+# echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
