@@ -16,6 +16,9 @@ HISTCONTROL=ignoreboth:erasedups
 # Append to history file, don't overwrite
 shopt -s histappend
 
+# Auto cd
+shopt -s autocd
+
 # History size settings
 HISTSIZE=10000
 HISTFILESIZE=20000
@@ -607,7 +610,7 @@ fi
 
 # Create directory and cd into it
 mkcd() {
-    mkdir -p "$1" && cd "$1"
+    mkdir -p "$1" && cd "$1" || exit
 }
 
 # Extract any archive
